@@ -18,106 +18,116 @@
 
 <body>
 
+  <div class="container-fluid">
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <i class="fa-brands fa-instagram me-2"></i>
+          <span>Instagram</span>
+        </a>
+        <form class="d-flex">
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#miModal">Create a New
+            Post</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privaci and Data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#" style="color: red;">Log out</a></li>
+            </ul>
+          </div>
+        </form>
 
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <i class="fa-brands fa-instagram me-2"></i>
-        <span>Instagram</span>
+    </nav>
+
+    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create a New Post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="caption" class="form-label">Caption:</label>
+            <textarea class="form-control" id="caption" rows="3"
+              placeholder="Add the caption of your post here"></textarea>
+          </div>
+          <div class="d-flex gap-3 px-3 pb-3">
+            <button type="button" class="btn btn-outline-secondary">
+              <i class="fa-solid fa-camera"></i>
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+              <i class="fa-solid fa-location-dot"></i>
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="d-flex justify-content-center gap-4 mt-3">
+      <a href="index.html" class="text-decoration-none">
+        <i class="fa-solid fa-table-cells"></i>
       </a>
-      <form class="d-flex">
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#miModal">Create a New
-          Post</button>
-        <div class="btn-group">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <i class="fa-solid fa-gear"></i>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><a class="dropdown-item" href="#">Accesibility</a></li>
-            <li><a class="dropdown-item" href="#">Privaci and Data</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Log out</a></li>
-          </ul>
-        </div>
-      </form>
+      <a href="grip1.html" class="text-decoration-none">
+        <i class="fa-solid fa-square"></i>
+      </a>
+    </div>
 
-  </nav>
 
-  <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Create a New Post</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Add the caption of your post here.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Publish</button>
+    <main class="container mt-4">
+      <div class="gallery-wrapper">
+        <div class="row g-3">
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://pub-58f43bfcdcdc4546851a978a4bcd5a7e.r2.dev/wp-content/uploads/2023/12/playstation-1.jpeg"
+              class="img-fluid rounded img-fixed" alt="Imagen 1">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://i.ytimg.com/vi/Hvcps5dFzfc/maxresdefault.jpg" class="img-fluid rounded img-fixed"
+              alt="Imagen 2">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://i.ytimg.com/vi/X_W1JQ5ubWQ/maxresdefault.jpg" class="img-fluid rounded img-fixed"
+              alt="Imagen 3">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://i.blogs.es/a284d0/ps3/500_333.jpeg" class="img-fluid rounded img-fixed" alt="Imagen 4">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://areajugones.sport.es/wp-content/uploads/2022/04/ps-vita-sony.jpg.webp"
+              class="img-fluid rounded img-fixed" alt="Imagen 5">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://i.blogs.es/3f3f7b/playstation_4_neo-3495477/450_1000.webp"
+              class="img-fluid rounded img-fixed" alt="Imagen 6">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://i.blogs.es/15cd4e/captura_de_pantalla_2024-09-10_a_las_17.08.51/650_1200.jpeg"
+              class="img-fluid rounded img-fixed" alt="Imagen 7">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://i.blogs.es/dec57a/ps-portal/500_333.jpeg" class="img-fluid rounded img-fixed"
+              alt="Imagen 8">
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://tecinfobcn.com/wp-content/uploads/2024/09/Playstation-origen-y-evolucion.jpg"
+              class="img-fluid rounded img-fixed" alt="Imagen 9">
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   </div>
-
-
-  <div class="d-flex justify-content-center gap-4 mt-3">
-    <a href="index.html" class="text-decoration-none">
-      <i class="fa-solid fa-grip fa-2x"></i>
-    </a>
-    <a href="grip1.html" class="text-decoration-none">
-      <i class="fa-solid fa-square fa-2x"></i>
-    </a>
-  </div>
-
-
-  <main class="container mt-4">
-    <div class="gallery-wrapper">
-      <div class="row g-3">
-        <div class="col-12 col-sm-6 col-md-4">
-          <img src="https://pub-58f43bfcdcdc4546851a978a4bcd5a7e.r2.dev/wp-content/uploads/2023/12/playstation-1.jpeg"
-            class="img-fluid rounded img-fixed" alt="Imagen 1">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <img src="https://i.ytimg.com/vi/Hvcps5dFzfc/maxresdefault.jpg" class="img-fluid rounded img-fixed"
-            alt="Imagen 2">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <img src="https://i.ytimg.com/vi/X_W1JQ5ubWQ/maxresdefault.jpg" class="img-fluid rounded img-fixed"
-            alt="Imagen 3">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <img src="https://i.blogs.es/a284d0/ps3/500_333.jpeg" class="img-fluid rounded img-fixed" alt="Imagen 4">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <img src="https://areajugones.sport.es/wp-content/uploads/2022/04/ps-vita-sony.jpg.webp"
-            class="img-fluid rounded img-fixed" alt="Imagen 5">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <img src="https://i.blogs.es/3f3f7b/playstation_4_neo-3495477/450_1000.webp"
-            class="img-fluid rounded img-fixed" alt="Imagen 6">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <img src="https://i.blogs.es/15cd4e/captura_de_pantalla_2024-09-10_a_las_17.08.51/650_1200.jpeg"
-            class="img-fluid rounded img-fixed" alt="Imagen 7">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <img src="https://i.blogs.es/dec57a/ps-portal/500_333.jpeg" class="img-fluid rounded img-fixed"
-            alt="Imagen 8">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <img src="https://tecinfobcn.com/wp-content/uploads/2024/09/Playstation-origen-y-evolucion.jpg"
-            class="img-fluid rounded img-fixed" alt="Imagen 9">
-        </div>
-      </div>
-    </div>
-  </main>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
